@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pratikum 4</title>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+	<div class="main">
+		<div class="formulir">
+			<form action="" method="">
+				<fieldset>
+					<legend class="center-text" id="formulir"><h1>Biodata Diri</h1></legend>
+					<div class="form">
+						<p>
+							<label for="nama">Nama : </label>
+							<input type="text" name="nama" placeholder="Nama lengkap anda" required>
+						</p>
+						<p>
+							<label for="nama">Tempat Lahir : </label>
+							<input type="text" name="tempat" placeholder="Tempat kelahiran anda" required>
+						</p>
+						<p>
+							<label for="nama">Tanggal Lahir : </label>
+							<input type="date" name="tanggal" placeholder="Nama lengkap anda" required>
+						</p>
+						<p>
+							<label for="nama">Jenis Kelamin : </label>
+							<input type="radio" id="male" name="gender" value="male">
+							<label for="male">Laki-laki</label>
+							<input type="radio" id="female" name="gender" value="female">
+							<label for="female">Perempuan</label>
+						</p>
+						<p>
+							<label for="nama">Pendidikan Terakhir: </label>
+							<select id="pendidikan" name="pendidikan" required>
+								<option value="none">-</option>
+								<option value="sd">SD/MI/Sederajat</option>
+								<option value="smp">SMP/MTs/Sederajat</option>
+								<option value="sma">SMA/SMK/MA/Sederajat</option>
+								<option value="s1">D1</option>
+								<option value="s1">D3</option>
+								<option value="s1">S1</option>
+								<option value="s2">S2</option>
+								<option value="s3">S3</option>
+							</select>
+						</p>
+						<p>
+							<label for="nama">Pendidikan saat ini: </label>
+							<select id="pendidikan" name="pendidikan" required>
+								<option value="none">-</option>
+								<option value="sd">SD</option>
+								<option value="smp">SMP</option>
+								<option value="sma">SMA/SMK</option>
+								<option value="s1">D1</option>
+								<option value="s1">D3</option>
+								<option value="s1">S1</option>
+								<option value="s2">S2</option>
+								<option value="s3">S3</option>
+							</select>
+						</p>
+						<p>
+							<label for="nama">No. Telp/HP : </label>
+							<input type="number" name="telp" placeholder="Nomor telp anda" required>
+						</p>
+						<p>
+							<label for="nama">Alamat : </label><br>
+							<textarea name="alamat" placeholder="Alamat anda tinggal saat ini" required></textarea>
+						</p>
+						<button><a href="#" >Submit</a></button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
