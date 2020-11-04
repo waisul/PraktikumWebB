@@ -1,0 +1,275 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tambah Hutang </title>
+	<link rel="shortcut icon" type="image/x-icon" href="pict/head.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adminlte.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        main {
+            overflow: auto;
+        }
+        
+        .medsos {
+            padding: 5px 0;
+            background-color: #2e3838;
+        }
+        
+        .medsos ul li {
+            display: inline-block;
+            color: #fff;
+            margin-right: 10px;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        .container:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        header h1 {
+            float: left;
+            padding: 15px 0;
+            color: #010202;
+        }
+        
+        header ul {
+            float: right;
+        }
+        
+        header ul li {
+            display: inline-block;
+        }
+        
+        header ul li a {
+            padding: 25px 20px;
+            display: inline-block;
+        }
+        
+        header ul li a:hover {
+            background-color: #455454;
+            color: #fff;
+        }
+        
+        .active {
+            background-color: #FFD700;
+            color: #fff;
+        }
+        
+        .kotak {
+            width: 500px;
+            padding: 40px;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color:  #DAA520;
+            border-radius: 20px;
+        }
+        
+        input[type="submit"] {
+            background-color: #FFA500;
+            color: white;
+            outline: none;
+            margin: 10px auto;
+            text-align: center;
+            border: 2px solid #F8F8FF;
+            padding: 15px 10px;
+            outline: none;
+            border-radius: 25px;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background: #FFD700
+        }
+        
+        table {
+            border-collapse: solid;
+            margin: 5px auto;
+        }
+        
+        table td {
+            padding: 15px 10px;
+            color: white;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    	<div class="alert">
+		<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+		<strong>Peringatan!</strong> Pastikan anda login untuk menyimpan data di SanCash.
+	</div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand navbar-sancash navbar-light border-bottom">
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="index.html"><img src="pict/logo.png" alt="" width="70px" height=""></a>
+        </li>
+      </ul>
+	  <ul class="nav-links" type="none" id="mynav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="detail.html">Catatan</a></li>
+			<li><a href="Hutang.html">Detail</a></li>
+		</ul>
+
+      <!-- RIGHT NAVBAR -->
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" data-widget="control-sidebar" data-slide="false" href="#" role="button">
+            <i class="fas fa-user-circle"></i>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+    <!--Form Tambah Transaksi pemasukan cssnya dari class kotak ke bawah-->
+    <div class="kotak">
+        <tr>
+            <td align="left">
+                <input type="submit" class="button" value="MEMBERI">
+                <input type="submit" class="button" value="MENERIMA">
+            </td>
+        </tr>
+        <table>
+            <tr>
+                <td>
+                    <label style="color: black;">NOMINAL</label>
+                </td>
+                <td>
+                    : <input type="number" placeholder="Rp.">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label style="color: black;">KONTAK</label>
+                </td>
+                <td>: <textarea name="textarea" cols="25" rows="5"></textarea></td>
+            </tr>
+              <tr>
+                <td>
+                    <label style="color: black;">CATATAN</label>
+                </td>
+                <td>: <textarea name="textarea" cols="25" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td> 
+                    <label style="color: black;">TANGGAL</label>
+                </td>
+                <td>: <input type="date" name="tanggal"></td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="submit" class="button" value="SIMPAN TRANSAKSI">
+                </td>
+            </tr>
+        </table>
+
+    </div>
+	
+	<!-- MODAL REGISTER -->
+    <div id="id04" class="modal-login">
+      <form class="modal-content animate-modal" action="/action_page.php" method="post">
+
+        <div class="container-modal">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Username" name="uname" required><br>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Password" name="psw" required>
+
+          <label for="uname"><b>Re-peat password</b></label>
+          <input type="password" placeholder="Password" name="uname" required><br>
+
+          <label for="psw"><b>Email</b></label>
+          <input type="text" placeholder="Email" name="psw" required>
+
+          <label for="uname"><b>No.HP</b></label>
+          <input type="text" placeholder="No.HP" name="uname" required><br>
+
+          <label for="psw"><b>Alamat</b></label>
+          <input type="password" placeholder="Alamat" name="psw" required>
+
+          <button type="button" onclick="document.getElementById('id04').style.display='none'" class="btn regbtn">Cancel</button>
+          <button type="button" class="btn btn-primary regbtn regbtn-color-blue" >Register</button>
+        </div>
+      </form>
+
+    </div>
+
+
+    <!-- SIDEBAR LOGIN -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <div class="sidebar-login">
+        <div class="side-x" data-widget="control-sidebar" data-slide="false" href="#" role="button">
+          <i class="fas fa-times-circle" > </i>
+        </div>
+        Login / Register
+        <input type="text" placeholder="username" >
+        <input type="password" placeholder="password">
+        <button type="button" name="button">LOGIN</button><br>
+        Belum Punya akun ?
+        <a data-toggle="dropdown" href="#" onclick="document.getElementById('id04').style.display='block'" style="width:auto;">
+          Register
+        </a>
+      </div>
+    </aside>
+
+    <!-- MODAL SCRIPT -->
+    <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+      var modal1 = document.getElementById('id02');
+      var modal2 = document.getElementById('id03');
+      var modal3 = document.getElementById('id04');
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event)
+      {
+        if (event.target == modal||event.target == modal1||event.target == modal2||event.target == modal3)
+        {
+          modal.style.display = "none";
+          modal1.style.display = "none";
+          modal2.style.display = "none";
+          modal3.style.display = "none";
+        }
+      }
+    </script>
+
+    <!-- LOGIN SIDEBAR SCRIPT -->
+    <script src="jquery/jquery.min.js"></script>
+    <script src="adminlte.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,160 @@
+
+/*awal*/
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+    
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    main {
+        overflow: auto;
+    }
+    
+    footer {
+        text-align: center;
+        font-weight: bold;
+        background-color: #1c2221;
+        color: #4659af;
+        margin-top: 100px;
+        padding: 0.5px;
+    }
+    
+    .medsos {
+        padding: 5px 0;
+        background-color: #2e3838;
+    }
+    
+    .medsos ul li {
+        display: inline-block;
+        color: #fff;
+        margin-right: 10px;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .container:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    
+    header h1 {
+        float: left;
+        padding: 15px 0;
+        color: #010202;
+    }
+    
+    header ul {
+        float: right;
+    }
+    
+    header ul li {
+        display: inline-block;
+    }
+    
+    header ul li a {
+        padding: 25px 20px;
+        display: inline-block;
+    }
+    
+    header ul li a:hover {
+        background-color: #455454;
+        color: #fff;
+    }
+    
+    .active {
+        background-color: #FFD700;
+        color: #fff;
+    }
+
+
+/*style */
+
+body{
+	font: 16px/18px arial,sans-serift;
+	background-color: #666;
+	color: #333;
+	background-image: url(img/background.png);
+}
+
+.container2 {
+	width: 960px;
+	margin: 20px auto;
+	background-color: #fff;
+}
+
+.main {
+	padding: 20px;
+}
+
+.head .judul {
+	font-size: 48px;
+	font-weight: bold; 
+	margin: 25px auto;
+	margin-top: 40px;
+
+}
+
+.total {
+	width: 700px;
+	margin: 25px auto;
+	position: relative;
+}
+
+.total .HS, .total .HP {
+	width: 300px;
+	display: inline-block;
+	padding: 10px;
+}
+
+.total .HS {
+	float: left;
+	background-color: lightgreen; 
+}
+
+.total .HP{
+	float: right;
+	background-color: salmon;
+}
+
+
+
+/*float clear*/
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+
+table, thead, tr, th,td {
+	margin-top: 5px;
+	padding: 3px;
+	border: 1px solid blue;
+}
+
+.table tbody button{
+	background-color: white;
+	border: none; 
+}
+
+.body button {
+	margin: 20px;
+}
