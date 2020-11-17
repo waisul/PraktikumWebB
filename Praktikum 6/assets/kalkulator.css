@@ -1,0 +1,115 @@
+*{
+   padding: 0;
+   margin: 0;
+   font-family: sans-serif;
+   box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+   width: 100%;
+   border: 1px solid black;
+}
+
+th,
+td {
+   text-align: center;
+   padding: 16px;
+}
+
+th{
+   background-color: black;
+   color: white;
+}
+
+tr:nth-child(even) {
+   background-color: darkblue;
+}
+
+.display {
+   color: white;
+   width: 100%;
+   padding: 5px 20px;
+   background-color: black;
+   border: 1px solid black;
+   font-size: 2em;
+}
+
+.flex-container-column{
+	display: flex;
+	flex-direction: column;
+
+	/* pendukung */
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.flex-container-row{
+	display: flex;
+}
+
+.button {
+   flex-basis: 25%;
+  
+   /* pendukung */
+   font-size: 1.5em;
+   text-align: center;
+   padding: 40px;
+   border: 1px solid black;
+   background: -webkit-linear-gradient(top, grey, #ccc);
+   cursor: pointer;
+}
+
+.button:hover {
+   font-weight: bold;
+}
+
+.double {
+   flex-basis: 50%;
+}
+
+.operator,
+.negative,
+.equals,
+.clear {
+   background: darkblue;
+   color: white
+}
+
+.card {
+   box-shadow: 0 15px 25px 0 darkblue;
+   border-radius: 10px;
+   padding: 30px;
+   margin-top: 20px;
+}
+
+.history {
+   width: 80%;
+   margin: 30px auto 0 auto;
+   overflow: scroll;
+}
+
+
+footer {
+   text-align: center;
+   font-weight: bold;
+   background-color: darkblue;
+   color: white;
+   margin-top: 100px;
+   padding: 20px;
+}
+
+@media screen and (max-width: 513px) {
+   .button {
+       padding: 10px;
+   }
+   .history {
+       width: 100%;
+   }
+}
