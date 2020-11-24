@@ -1,0 +1,91 @@
+.form-style{
+    max-width: 500px;
+    height: 400px;
+    margin: 30px auto;
+    padding:10px;
+}
+
+.form-style form{
+    margin: 30px auto;
+}
+
+legend{
+    color: #FFDEAD;
+    background-color:navy;
+    border-top: 1px solid darkgrey;
+    border-left: 1px;
+    border-right: 1px;
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px;
+}
+
+fieldset{
+    border-radius: 10px;
+    background-color: navy;
+    width: fit-content;
+    margin: 30px auto;
+}
+
+.backgroud{
+    border-radius: 10px;
+    background-color: #FFDEAD;
+    width: fit-content;
+    margin: 30px auto;
+}
+
+table td{
+    color:#FFDEAD;
+    padding: 5px 20px;
+}
+
+.hitung{
+    padding:5px;
+    margin: 10px 30px 100px 170px;
+}
+
+.hitung input{
+    color:#FFDEAD;
+    width: 150px;
+    height: 30px;
+    background-color:navy;
+}
+
+
+h1{
+    text-align:center;
+    color: #ffdead;
+}
+
+.box-tampil{
+    max-width: 500px;
+    height: 400px;
+    margin: 30px auto;
+    padding:10px;
+    background-color: navy;
+    padding: 5px;
+}
+
+table{
+    margin: left;
+}
+    
+table td{
+    padding: 3px;
+}
+
+.identitas {
+    padding:30px;
+    color:#FFDEAD;
+}
+
+.nilai{
+    margin-left: 20px;
+    padding:10px;
+    color:#FFDEAD;
+}
+
+.akhir{
+    padding:25px; 
+    color:#FFDEAD;
+}
+            
