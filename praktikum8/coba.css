@@ -1,0 +1,54 @@
+.sidebar-login{
+  width: 100%;
+  text-align: center;
+  padding: 12px 20px;
+  margin: 57px 0;
+  display: inline-block;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.side-x
+{
+  text-align:right;
+  padding: 0 0;
+}
+
+button[class="detail"] {
+  border-radius:20px;
+  float:right;
+}
+
+.boxdetail{
+  width: 50%;
+  margin: 5% 25%;
+  font-family:sans-serif;
+}
+
+.detailbox{
+    width:500px;
+    background: white;
+}
+
+.kiri{
+  background:#f09526;
+  float:left;
+  width:50%;
+  border: 1px solid black;
+}
+
+.kanan{
+  background:#f09526;
+  float:right;
+  width:50%;
+  border: 1px solid black;
+}
+
+.kotak {
+  padding: 40px;
+  position: absolute;
+  text-align: left;
+  background-color: rgb(71, 70, 70);
+  border-radius: 20px;
+}
